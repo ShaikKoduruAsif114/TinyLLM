@@ -24,7 +24,7 @@ VAL_SPLIT = 0.01          # 1% validation
 
 # Number of stories to encode
 # None = Use Full TinyStories Dataset
-NUM_STORIES = None
+NUM_STORIES = 100000
 
 
 # ============================================================
