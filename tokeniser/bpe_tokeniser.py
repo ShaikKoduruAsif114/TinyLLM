@@ -18,6 +18,8 @@ class BPETokenizer:
 
         self.vocab = set()
         self.merges = []
+        self.merge_ranks = {}
+        self.cache = {}
 
         self.token_to_id = {}
         self.id_to_token = {}
@@ -101,6 +103,47 @@ class BPETokenizer:
         self.bos_token_id = self.token_to_id["<BOS>"]
         self.eos_token_id = self.token_to_id["<EOS>"]
         self.unk_token_id = self.token_to_id["<UNK>"]
+
+    def _build_merge_ranks(self):
+
+        self.merge_ranks = {
+            pair: idx
+            for idx, pair in enumerate(self.merges)
+        }
+
+    def _encode_word(self, word):
+
+        if word in self.cache:
+            return self.cache[word]
+
+        word_tokens = list(word) + ["</w>"]
+
+        while True:
+            best_rank = None
+            best_index = None
+
+            for i in range(len(word_tokens) - 1):
+                pair = (word_tokens[i], word_tokens[i + 1])
+                rank = self.merge_ranks.get(pair)
+
+                if rank is None:
+                    continue
+
+                if best_rank is None or rank < best_rank:
+                    best_rank = rank
+                    best_index = i
+
+            if best_index is None:
+                break
+
+            merged = word_tokens[:best_index] + [
+                word_tokens[best_index] + word_tokens[best_index + 1]
+            ] + word_tokens[best_index + 2:]
+
+            word_tokens = merged
+
+        self.cache[word] = word_tokens
+        return word_tokens
     ############################################################
     # Train BPE
     ############################################################
@@ -136,6 +179,8 @@ class BPETokenizer:
             self.merges.append(best_pair)
 
         self.build_vocab_ids()
+        self._build_merge_ranks()
+        self.cache = {}
 
     ############################################################
     # Encode text -> ids
@@ -145,35 +190,7 @@ class BPETokenizer:
         tokens = []
 
         for word in text.split():
-
-            word_tokens = list(word) + ["</w>"]
-
-            for pair in self.merges:
-
-                merged = []
-
-                i = 0
-
-                while i < len(word_tokens):
-
-                    if (
-                        i < len(word_tokens) - 1
-                        and word_tokens[i] == pair[0]
-                        and word_tokens[i + 1] == pair[1]
-                    ):
-
-                        merged.append(pair[0] + pair[1])
-
-                        i += 2
-
-                    else:
-
-                        merged.append(word_tokens[i])
-
-                        i += 1
-
-                word_tokens = merged
-
+            word_tokens = self._encode_word(word)
             tokens.extend(word_tokens)
 
         ids = []
@@ -269,3 +286,6 @@ class BPETokenizer:
                 tuple(pair)
                 for pair in json.load(f)
             ]
+
+        self._build_merge_ranks()
+        self.cache = {}
