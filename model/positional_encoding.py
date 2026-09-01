@@ -32,7 +32,10 @@ class LearnedPositionalEncoding(nn.Module):
 
     def forward(self, x):
         seq_len = x.size(1)
-        positions = torch.arange(seq_len, device=x.device, dtype=torch.long).unsqueeze(0)
+        positions = torch.arange(seq_len, device=x.device, dtype=torch.long)
+        # Positions beyond num_embeddings - 1 lose distinct positional information and collapse to the same vector.
+        positions = positions.clamp(max=self.pos_embed.num_embeddings - 1)
+        positions = positions.unsqueeze(0)
         return x + self.pos_embed(positions)
 
 

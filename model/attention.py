@@ -31,11 +31,6 @@ class MultiHeadAttention(nn.Module):
         self.attn_dropout = nn.Dropout(dropout)
         self.resid_dropout = nn.Dropout(dropout)
         
-        # Causal mask (lower triangular)
-        # register_buffer means it's saved with model but not trained
-        self.register_buffer("bias", torch.tril(torch.ones(block_size, block_size))
-                                     .view(1, 1, block_size, block_size))
-        
         # Flash attention not implemented here for simplicity (we'll use standard)
         
     def forward(self, x):
@@ -67,9 +62,11 @@ class MultiHeadAttention(nn.Module):
         # Scale by sqrt(head_dim)
         att = (q @ k.transpose(-2, -1)) * (1.0 / math.sqrt(self.head_dim))
         
-        # Causal mask (upper triangle set to -inf)
-        # self.bias is (1, 1, block_size, block_size), we slice to T
-        att = att.masked_fill(self.bias[:, :, :T, :T] == 0, float('-inf'))
+        # Build the causal mask at the input length so evaluation can exceed the training context.
+        mask = torch.tril(
+            torch.ones(T, T, device=x.device, dtype=torch.bool)
+        ).view(1, 1, T, T)
+        att = att.masked_fill(~mask, float('-inf'))
         
         # Softmax over last dimension (keys)
         att = F.softmax(att, dim=-1)
