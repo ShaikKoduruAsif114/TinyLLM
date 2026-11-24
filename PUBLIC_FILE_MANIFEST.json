@@ -1,0 +1,826 @@
+{
+  "algorithm": "sha256",
+  "self_excluded": "PUBLIC_FILE_MANIFEST.json",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 325,
+      "sha256": "97b4bdae2f9906ab40908d0141eb1e99fc100050a431b8bcc8604aa3c16c370b"
+    },
+    {
+      "path": "01_forward_pass.ipynb",
+      "bytes": 31204,
+      "sha256": "fc121219a5e74d0b0b1916efabb288e7dd6ec8a73e2a6b8244da5e811f2b5b51"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6630,
+      "sha256": "037d4f1543d1c13fc0e80cdbf6b225aec20664e387d69969bd735a9944f77d39"
+    },
+    {
+      "path": "analysis/attention_viz.py",
+      "bytes": 2344,
+      "sha256": "3bcd34d91aa9d8fbb494094664b4ca386c91d5ea7ef521a3ab97569b2caa6a42"
+    },
+    {
+      "path": "analysis/embedding_similarity.py",
+      "bytes": 1729,
+      "sha256": "5200722be96920704e0b6406b23c59bad4313ab1b4937ab5db21c04db78cf777"
+    },
+    {
+      "path": "analysis/eval_utils.py",
+      "bytes": 3331,
+      "sha256": "29e4e90d1e0c61474cdf4e34596a5910334fb7667109fbbc319ffa62ac34ec92"
+    },
+    {
+      "path": "analysis/perplexity_vs_length.py",
+      "bytes": 1630,
+      "sha256": "5531380c0b4727c520530cb48b1b23d0b0b37034e0497b25ffa2acb132f16a49"
+    },
+    {
+      "path": "data/train.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "data/val.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dataloader.py",
+      "bytes": 1896,
+      "sha256": "d5946ee4bce585e44e8eae47eb8250ad0010d4446d6a2c473151bf26007fe375"
+    },
+    {
+      "path": "dataset.py",
+      "bytes": 2975,
+      "sha256": "96b7f98bfaed1c11acdcc32bf858c63f885ac9944dccecb3e10d83ec94996a6e"
+    },
+    {
+      "path": "docs/ARCHIVE-SAFETY.md",
+      "bytes": 991,
+      "sha256": "45072062cf73f57fe95202033adc393232e131898e10584e8b28a03609ba3deb"
+    },
+    {
+      "path": "docs/EXPERIMENTS.md",
+      "bytes": 5450,
+      "sha256": "66db5fb0ec414b9405ad3802bbaca3a42f1a1eb2ab4b291cb587ae2a1b4a2750"
+    },
+    {
+      "path": "docs/IMPLEMENTATION.md",
+      "bytes": 7003,
+      "sha256": "8cafa983a140ef65b4879ed3f569e59eb5dbf284dec2311ba7158d5647e2b058"
+    },
+    {
+      "path": "docs/RECOVERY.md",
+      "bytes": 5613,
+      "sha256": "9961acf0916f2986e11a989d0b2102b6cfb00155240ea58cee6d86266627b7f9"
+    },
+    {
+      "path": "experiments/configs/learned_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/configs/rope_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/configs/sinusoidal_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "merges.json",
+      "bytes": 172087,
+      "sha256": "75464e079f7716731615f0d763869a7e5023dd9454df112b6518d39b994dbada"
+    },
+    {
+      "path": "model/attention.py",
+      "bytes": 3285,
+      "sha256": "82ece2b1c70c1da0b09d2fca6e481d6d6ffb79ffa2af5eb02d3d65500b8c0a0b"
+    },
+    {
+      "path": "model/block.py",
+      "bytes": 1120,
+      "sha256": "dd3a44233f1d8ce82aab5fb1c22f76ff03306793d716beada8661f5d180d7bb7"
+    },
+    {
+      "path": "model/feedforward.py",
+      "bytes": 892,
+      "sha256": "02c39300b3df90dac58532f7307d69f39a28bd0694ced95cab194807b956171b"
+    },
+    {
+      "path": "model/gpt.py",
+      "bytes": 10251,
+      "sha256": "10e1c30c0d726dbd509aa070295b7ae3e63b094e16d8f7e625cef959a81eaf91"
+    },
+    {
+      "path": "model/positional_encoding.py",
+      "bytes": 2225,
+      "sha256": "23ef2ac8a6979d7e7360e7f92c654b5a8def7b4a77f11794a908580bf3daa167"
+    },
+    {
+      "path": "prepare_data.py",
+      "bytes": 3432,
+      "sha256": "c9cab3831ed837081246c7f20616b4580ed5201be33938c96849be516ae573a4"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/.gitignore",
+      "bytes": 52,
+      "sha256": "719b61029c30e42b19f5c61cb27d54d3b80e39bce8434b0e2969a80cda2e7529"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/01_forward_pass.ipynb",
+      "bytes": 31204,
+      "sha256": "fc121219a5e74d0b0b1916efabb288e7dd6ec8a73e2a6b8244da5e811f2b5b51"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/analysis/attention_viz.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/analysis/embedding_similarity.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/analysis/perplexity_vs_length.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/data/train.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/data/val.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/dataloader.py",
+      "bytes": 1896,
+      "sha256": "d5946ee4bce585e44e8eae47eb8250ad0010d4446d6a2c473151bf26007fe375"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/dataset.py",
+      "bytes": 2975,
+      "sha256": "96b7f98bfaed1c11acdcc32bf858c63f885ac9944dccecb3e10d83ec94996a6e"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/experiments/configs/learned_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/experiments/configs/rope_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/experiments/configs/sinusoidal_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/merges.json",
+      "bytes": 172087,
+      "sha256": "75464e079f7716731615f0d763869a7e5023dd9454df112b6518d39b994dbada"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/model/attention.py",
+      "bytes": 3489,
+      "sha256": "fd01eeb247134f4612293bdee4e375008ad421037ce93af5f61230af63e9d79c"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/model/block.py",
+      "bytes": 1120,
+      "sha256": "dd3a44233f1d8ce82aab5fb1c22f76ff03306793d716beada8661f5d180d7bb7"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/model/feedforward.py",
+      "bytes": 892,
+      "sha256": "02c39300b3df90dac58532f7307d69f39a28bd0694ced95cab194807b956171b"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/model/gpt.py",
+      "bytes": 10251,
+      "sha256": "10e1c30c0d726dbd509aa070295b7ae3e63b094e16d8f7e625cef959a81eaf91"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/model/positional_encoding.py",
+      "bytes": 2004,
+      "sha256": "e19dacd7aac474c1e368abf9aa54d464e2d3fa56b42392f75ca15e6be97aeabc"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/prepare_data.py",
+      "bytes": 3432,
+      "sha256": "c9cab3831ed837081246c7f20616b4580ed5201be33938c96849be516ae573a4"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/scripts/test_attention_compare.py",
+      "bytes": 2062,
+      "sha256": "befc580bd14b54042e68287f37a5dd59482ab69257df879ebc86397aa9e38b99"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/tokeniser/bpe_tokeniser.py",
+      "bytes": 7384,
+      "sha256": "01d57f63cff4b595030096980f4b645f45da8d64dc2f70530be878bb91bf393f"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/tokeniser/test_tokeniser.py",
+      "bytes": 581,
+      "sha256": "5023634ab159e92f90b46688f56146d441faf66e27ff3f2e8afe3ac39d69936b"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/tokeniser/train_tokeniser.py",
+      "bytes": 532,
+      "sha256": "3577b28ebdd67529290f6f0f415bc99d02ce97150010c3b8aef115e1603b2d69"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/train.py",
+      "bytes": 9406,
+      "sha256": "4573ad4468a32b22d44dfdf9550c83fae7059145e8ca80bf9c7f2ee3224f9a90"
+    },
+    {
+      "path": "recovered/archive-tinyllm-main/vocab.json",
+      "bytes": 84828,
+      "sha256": "9905e7a62f351c45fcc494680352eeba0e2d234b7a3393421bda1ded775fbca4"
+    },
+    {
+      "path": "recovered/extra-notebooks/TinyLLM_Complete_Kaggle_Workflow_fixed.ipynb",
+      "bytes": 2282,
+      "sha256": "95f975f241f716936deabd652a74eae64bf82e2dbee1dfffd5ceb71b08383e48"
+    },
+    {
+      "path": "recovered/extra-notebooks/TinyLLM_End_to_End_Kaggle.ipynb",
+      "bytes": 2652,
+      "sha256": "d16d3fda74098bd2f9099c67ec622009c922a67ef8a9dddf7d97d8d2cb8d6042"
+    },
+    {
+      "path": "recovered/extra-notebooks/notebook6402d029ab.ipynb",
+      "bytes": 6029,
+      "sha256": "8eca9585938c4b1ae5cf0c5683252ba8298f5c005052d1ede8f77daf79a50735"
+    },
+    {
+      "path": "recovered/extra-notebooks/notebookea2a3eb80e.ipynb",
+      "bytes": 3938,
+      "sha256": "f3b0261719fb436cb33f88d08f6a9636496818b1fb4ea247ad401f4e2d1b625f"
+    },
+    {
+      "path": "recovered/git-history/2190cf7/prepare_data.py",
+      "bytes": 3432,
+      "sha256": "c9cab3831ed837081246c7f20616b4580ed5201be33938c96849be516ae573a4"
+    },
+    {
+      "path": "recovered/git-history/3352ac4/tokeniser/bpe_tokeniser.py",
+      "bytes": 7384,
+      "sha256": "01d57f63cff4b595030096980f4b645f45da8d64dc2f70530be878bb91bf393f"
+    },
+    {
+      "path": "recovered/git-history/3352ac4/tokeniser/test_tokeniser.py",
+      "bytes": 581,
+      "sha256": "5023634ab159e92f90b46688f56146d441faf66e27ff3f2e8afe3ac39d69936b"
+    },
+    {
+      "path": "recovered/git-history/5d40a46/README.md",
+      "bytes": 2544,
+      "sha256": "1ff6d7437ba7bcd26d1a49b47c442370e66d47700f1ef0b3c1073df19d2d9d48"
+    },
+    {
+      "path": "recovered/git-history/5d40a46/analysis/attention_viz.py",
+      "bytes": 2344,
+      "sha256": "3bcd34d91aa9d8fbb494094664b4ca386c91d5ea7ef521a3ab97569b2caa6a42"
+    },
+    {
+      "path": "recovered/git-history/5d40a46/analysis/embedding_similarity.py",
+      "bytes": 1729,
+      "sha256": "5200722be96920704e0b6406b23c59bad4313ab1b4937ab5db21c04db78cf777"
+    },
+    {
+      "path": "recovered/git-history/5d40a46/analysis/eval_utils.py",
+      "bytes": 3331,
+      "sha256": "29e4e90d1e0c61474cdf4e34596a5910334fb7667109fbbc319ffa62ac34ec92"
+    },
+    {
+      "path": "recovered/git-history/5d40a46/analysis/perplexity_vs_length.py",
+      "bytes": 1630,
+      "sha256": "5531380c0b4727c520530cb48b1b23d0b0b37034e0497b25ffa2acb132f16a49"
+    },
+    {
+      "path": "recovered/git-history/5d40a46/model/attention.py",
+      "bytes": 3285,
+      "sha256": "82ece2b1c70c1da0b09d2fca6e481d6d6ffb79ffa2af5eb02d3d65500b8c0a0b"
+    },
+    {
+      "path": "recovered/git-history/5d40a46/model/positional_encoding.py",
+      "bytes": 2225,
+      "sha256": "23ef2ac8a6979d7e7360e7f92c654b5a8def7b4a77f11794a908580bf3daa167"
+    },
+    {
+      "path": "recovered/git-history/5d40a46/requirements.txt",
+      "bytes": 43,
+      "sha256": "56c761d2091045012068ff80dfd52e418723feda24775381053b35221d2a0cf8"
+    },
+    {
+      "path": "recovered/git-history/5d40a46/tinyllm.ipynb",
+      "bytes": 41678,
+      "sha256": "164bda021dc633e04ecd2ec35eb46ae50d429db6ba85b1f46609f5ab3eb3ead3"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/.gitignore",
+      "bytes": 52,
+      "sha256": "719b61029c30e42b19f5c61cb27d54d3b80e39bce8434b0e2969a80cda2e7529"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/01_forward_pass.ipynb",
+      "bytes": 31204,
+      "sha256": "fc121219a5e74d0b0b1916efabb288e7dd6ec8a73e2a6b8244da5e811f2b5b51"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/analysis/attention_viz.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/analysis/embedding_similarity.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/analysis/perplexity_vs_length.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/data/train.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/data/val.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/dataloader.py",
+      "bytes": 1896,
+      "sha256": "d5946ee4bce585e44e8eae47eb8250ad0010d4446d6a2c473151bf26007fe375"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/dataset.py",
+      "bytes": 2036,
+      "sha256": "6e7acbcaf57828431ad94fc2c24bb7f61d1911faefb3edc4c26201cdf6b14ef0"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/experiments/configs/learned_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/experiments/configs/rope_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/experiments/configs/sinusoidal_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/merges.json",
+      "bytes": 172087,
+      "sha256": "75464e079f7716731615f0d763869a7e5023dd9454df112b6518d39b994dbada"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/model/attention.py",
+      "bytes": 3489,
+      "sha256": "fd01eeb247134f4612293bdee4e375008ad421037ce93af5f61230af63e9d79c"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/model/block.py",
+      "bytes": 1120,
+      "sha256": "dd3a44233f1d8ce82aab5fb1c22f76ff03306793d716beada8661f5d180d7bb7"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/model/feedforward.py",
+      "bytes": 892,
+      "sha256": "02c39300b3df90dac58532f7307d69f39a28bd0694ced95cab194807b956171b"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/model/gpt.py",
+      "bytes": 10251,
+      "sha256": "10e1c30c0d726dbd509aa070295b7ae3e63b094e16d8f7e625cef959a81eaf91"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/model/positional_encoding.py",
+      "bytes": 2004,
+      "sha256": "e19dacd7aac474c1e368abf9aa54d464e2d3fa56b42392f75ca15e6be97aeabc"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/prepare_data.py",
+      "bytes": 3430,
+      "sha256": "0ed1e2d049e35d5e50bf5806e6bcd997be1efc9f42885c7498d319c6cffacebd"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/scripts/test_attention_compare.py",
+      "bytes": 2062,
+      "sha256": "befc580bd14b54042e68287f37a5dd59482ab69257df879ebc86397aa9e38b99"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/tokeniser/bpe_tokeniser.py",
+      "bytes": 6742,
+      "sha256": "c2cd6437f2cc4a9a128a095c79285f909609dd2ab2144e93ccbfb82e20eb489f"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/tokeniser/test_tokeniser.py",
+      "bytes": 338,
+      "sha256": "22d29ea967acd27a906cf92dec08b1df1c4655c6023bd4edab700f92b8d8eb6e"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/tokeniser/train_tokeniser.py",
+      "bytes": 532,
+      "sha256": "3577b28ebdd67529290f6f0f415bc99d02ce97150010c3b8aef115e1603b2d69"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/train.py",
+      "bytes": 9406,
+      "sha256": "4573ad4468a32b22d44dfdf9550c83fae7059145e8ca80bf9c7f2ee3224f9a90"
+    },
+    {
+      "path": "recovered/git-history/6c91dc9/vocab.json",
+      "bytes": 84828,
+      "sha256": "9905e7a62f351c45fcc494680352eeba0e2d234b7a3393421bda1ded775fbca4"
+    },
+    {
+      "path": "recovered/git-history/e5d40d9/dataset.py",
+      "bytes": 2975,
+      "sha256": "96b7f98bfaed1c11acdcc32bf858c63f885ac9944dccecb3e10d83ec94996a6e"
+    },
+    {
+      "path": "recovered/local-tinyllm/.gitignore",
+      "bytes": 56,
+      "sha256": "4e82d5494a3608585ac5798db8d0238a49b7cf49c11466ff9452f779a06e2817"
+    },
+    {
+      "path": "recovered/local-tinyllm/01_forward_pass.ipynb",
+      "bytes": 31204,
+      "sha256": "fc121219a5e74d0b0b1916efabb288e7dd6ec8a73e2a6b8244da5e811f2b5b51"
+    },
+    {
+      "path": "recovered/local-tinyllm/README.md",
+      "bytes": 2587,
+      "sha256": "b3883ad9c1cca9e507bc232fbe5aa3166c26fb00f949eff3fa65e0a700b7fb4c"
+    },
+    {
+      "path": "recovered/local-tinyllm/TinyLLM_Encoded_Dataset/merges.json",
+      "bytes": 172087,
+      "sha256": "75464e079f7716731615f0d763869a7e5023dd9454df112b6518d39b994dbada"
+    },
+    {
+      "path": "recovered/local-tinyllm/TinyLLM_Encoded_Dataset/vocab.json",
+      "bytes": 84828,
+      "sha256": "9905e7a62f351c45fcc494680352eeba0e2d234b7a3393421bda1ded775fbca4"
+    },
+    {
+      "path": "recovered/local-tinyllm/analysis/attention_viz.py",
+      "bytes": 2419,
+      "sha256": "7528b6a71caf7cb1440ac304ea14f0e53b62a13677f86e9a550e71109631f5c9"
+    },
+    {
+      "path": "recovered/local-tinyllm/analysis/embedding_similarity.py",
+      "bytes": 1791,
+      "sha256": "bc1dc24ec481a04444b448804757071f3c5d2b3a1492b29ea1aed8c220f8e65f"
+    },
+    {
+      "path": "recovered/local-tinyllm/analysis/eval_utils.py",
+      "bytes": 3428,
+      "sha256": "da92505964a46be779c8bc5d8eaf8e15ce172792fc0d638b911297c41b4c427e"
+    },
+    {
+      "path": "recovered/local-tinyllm/analysis/perplexity_vs_length.py",
+      "bytes": 1693,
+      "sha256": "de1a95cea3051dea08f3f522dc9e8095cdb5a7b656c5c95a7f34bac3ad184b84"
+    },
+    {
+      "path": "recovered/local-tinyllm/data/train.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/local-tinyllm/data/val.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/local-tinyllm/dataloader.py",
+      "bytes": 1987,
+      "sha256": "66934e4d13c3b3f5a2b90a47522305cb0177945d5bb6d67bd9672e8c2f1bc4c4"
+    },
+    {
+      "path": "recovered/local-tinyllm/dataset.py",
+      "bytes": 3080,
+      "sha256": "b072ed84e79251749058079f763fb6689bedf5b5b4ab58746b06ddbc850b8e7d"
+    },
+    {
+      "path": "recovered/local-tinyllm/experiments/configs/learned_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/local-tinyllm/experiments/configs/rope_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/local-tinyllm/experiments/configs/sinusoidal_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/local-tinyllm/merges.json",
+      "bytes": 188056,
+      "sha256": "54bd8a1ecc5aec618c9f406dbf9b1f3c21ce388096bac70a6cd89d190ed5c8f0"
+    },
+    {
+      "path": "recovered/local-tinyllm/model/attention.py",
+      "bytes": 3370,
+      "sha256": "f936aff1004ba62cd8c799b5dcc960ecfa92ca41d1d86cae722d391fc5566d6d"
+    },
+    {
+      "path": "recovered/local-tinyllm/model/block.py",
+      "bytes": 1158,
+      "sha256": "240b04acb192995c5a373b1180996d27bdbf6c3f87976440d17a8c5ff754cb0f"
+    },
+    {
+      "path": "recovered/local-tinyllm/model/feedforward.py",
+      "bytes": 926,
+      "sha256": "4d5b023d5f3b42cc877a45b210c6ff77d4cd9a41db29b99cc7821202ce379eef"
+    },
+    {
+      "path": "recovered/local-tinyllm/model/gpt.py",
+      "bytes": 10524,
+      "sha256": "a7d0956dc2219171ad184846d402eea71ac26aa4f9ac7041327b19f8149b739c"
+    },
+    {
+      "path": "recovered/local-tinyllm/model/positional_encoding.py",
+      "bytes": 2283,
+      "sha256": "2c0b90945ea83320ce7304a4693822e78f24b0a5507f163c1416dbbb4f00f53a"
+    },
+    {
+      "path": "recovered/local-tinyllm/notebook_source.py",
+      "bytes": 33071,
+      "sha256": "d258f60926c7095f62f3b524bbabbc6f18a6e1696b997b254eba70535032ef8f"
+    },
+    {
+      "path": "recovered/local-tinyllm/prepare_data.py",
+      "bytes": 3572,
+      "sha256": "cf299efa6452264ad24e6f5ece355f6c82b8ca7b5b003891658a926c8316a2c6"
+    },
+    {
+      "path": "recovered/local-tinyllm/requirements.txt",
+      "bytes": 48,
+      "sha256": "b33a15f0092f0a67c4cc673585263c5787ef4bcab67a24b04df72bf782b68d5c"
+    },
+    {
+      "path": "recovered/local-tinyllm/run_clean_eval.py",
+      "bytes": 4645,
+      "sha256": "c3fa5d7821ae095775dcae12ba211c89b6fa3642374799009f46d53a1426af27"
+    },
+    {
+      "path": "recovered/local-tinyllm/scripts/test_attention_compare.py",
+      "bytes": 2114,
+      "sha256": "c12e844759bb434ec88048f3015199b3aeb874eeb4669fa27a6948c3ab01f198"
+    },
+    {
+      "path": "recovered/local-tinyllm/tinyllm.ipynb",
+      "bytes": 41678,
+      "sha256": "164bda021dc633e04ecd2ec35eb46ae50d429db6ba85b1f46609f5ab3eb3ead3"
+    },
+    {
+      "path": "recovered/local-tinyllm/tokeniser/bpe_tokeniser.py",
+      "bytes": 7675,
+      "sha256": "0cff8f79f6df41b2b4f1acfb7ca2fd5259d4075b64f493e2d072144a2c15c0a6"
+    },
+    {
+      "path": "recovered/local-tinyllm/tokeniser/test_tokeniser.py",
+      "bytes": 603,
+      "sha256": "295d779c08452953e158bada71a2cce71ef3d24b40397e15c1a1ecc81a9cc65f"
+    },
+    {
+      "path": "recovered/local-tinyllm/tokeniser/train_tokeniser.py",
+      "bytes": 553,
+      "sha256": "0278da9e86bef791d1e8302059ffa38b78a89be52f440202a144c12d08f0c5fd"
+    },
+    {
+      "path": "recovered/local-tinyllm/train.py",
+      "bytes": 9711,
+      "sha256": "2485f4a6238fde670c8179f517afed392633129e2a50063acfb6ddb6e56fd27e"
+    },
+    {
+      "path": "recovered/local-tinyllm/vocab.json",
+      "bytes": 88925,
+      "sha256": "495491c4bf627c0cc3aa5d0bf5b6b55177fc2e4b4f634da848ace82b6d5f0847"
+    },
+    {
+      "path": "recovered/reports/perplexity_vs_context_length.csv",
+      "bytes": 624,
+      "sha256": "fe89d6e4264b36934b49a2ce34587ef53a5aa4a5da2e256e08878d2acaf401de"
+    },
+    {
+      "path": "recovered/repository-baseline/.gitignore",
+      "bytes": 52,
+      "sha256": "719b61029c30e42b19f5c61cb27d54d3b80e39bce8434b0e2969a80cda2e7529"
+    },
+    {
+      "path": "recovered/repository-baseline/01_forward_pass.ipynb",
+      "bytes": 31204,
+      "sha256": "fc121219a5e74d0b0b1916efabb288e7dd6ec8a73e2a6b8244da5e811f2b5b51"
+    },
+    {
+      "path": "recovered/repository-baseline/README.md",
+      "bytes": 2544,
+      "sha256": "1ff6d7437ba7bcd26d1a49b47c442370e66d47700f1ef0b3c1073df19d2d9d48"
+    },
+    {
+      "path": "recovered/repository-baseline/analysis/attention_viz.py",
+      "bytes": 2344,
+      "sha256": "3bcd34d91aa9d8fbb494094664b4ca386c91d5ea7ef521a3ab97569b2caa6a42"
+    },
+    {
+      "path": "recovered/repository-baseline/analysis/embedding_similarity.py",
+      "bytes": 1729,
+      "sha256": "5200722be96920704e0b6406b23c59bad4313ab1b4937ab5db21c04db78cf777"
+    },
+    {
+      "path": "recovered/repository-baseline/analysis/eval_utils.py",
+      "bytes": 3331,
+      "sha256": "29e4e90d1e0c61474cdf4e34596a5910334fb7667109fbbc319ffa62ac34ec92"
+    },
+    {
+      "path": "recovered/repository-baseline/analysis/perplexity_vs_length.py",
+      "bytes": 1630,
+      "sha256": "5531380c0b4727c520530cb48b1b23d0b0b37034e0497b25ffa2acb132f16a49"
+    },
+    {
+      "path": "recovered/repository-baseline/data/train.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/repository-baseline/data/val.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/repository-baseline/dataloader.py",
+      "bytes": 1896,
+      "sha256": "d5946ee4bce585e44e8eae47eb8250ad0010d4446d6a2c473151bf26007fe375"
+    },
+    {
+      "path": "recovered/repository-baseline/dataset.py",
+      "bytes": 2975,
+      "sha256": "96b7f98bfaed1c11acdcc32bf858c63f885ac9944dccecb3e10d83ec94996a6e"
+    },
+    {
+      "path": "recovered/repository-baseline/experiments/configs/learned_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/repository-baseline/experiments/configs/rope_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/repository-baseline/experiments/configs/sinusoidal_config.yaml",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recovered/repository-baseline/merges.json",
+      "bytes": 172087,
+      "sha256": "75464e079f7716731615f0d763869a7e5023dd9454df112b6518d39b994dbada"
+    },
+    {
+      "path": "recovered/repository-baseline/model/attention.py",
+      "bytes": 3285,
+      "sha256": "82ece2b1c70c1da0b09d2fca6e481d6d6ffb79ffa2af5eb02d3d65500b8c0a0b"
+    },
+    {
+      "path": "recovered/repository-baseline/model/block.py",
+      "bytes": 1120,
+      "sha256": "dd3a44233f1d8ce82aab5fb1c22f76ff03306793d716beada8661f5d180d7bb7"
+    },
+    {
+      "path": "recovered/repository-baseline/model/feedforward.py",
+      "bytes": 892,
+      "sha256": "02c39300b3df90dac58532f7307d69f39a28bd0694ced95cab194807b956171b"
+    },
+    {
+      "path": "recovered/repository-baseline/model/gpt.py",
+      "bytes": 10251,
+      "sha256": "10e1c30c0d726dbd509aa070295b7ae3e63b094e16d8f7e625cef959a81eaf91"
+    },
+    {
+      "path": "recovered/repository-baseline/model/positional_encoding.py",
+      "bytes": 2225,
+      "sha256": "23ef2ac8a6979d7e7360e7f92c654b5a8def7b4a77f11794a908580bf3daa167"
+    },
+    {
+      "path": "recovered/repository-baseline/prepare_data.py",
+      "bytes": 3432,
+      "sha256": "c9cab3831ed837081246c7f20616b4580ed5201be33938c96849be516ae573a4"
+    },
+    {
+      "path": "recovered/repository-baseline/requirements.txt",
+      "bytes": 43,
+      "sha256": "56c761d2091045012068ff80dfd52e418723feda24775381053b35221d2a0cf8"
+    },
+    {
+      "path": "recovered/repository-baseline/scripts/test_attention_compare.py",
+      "bytes": 2062,
+      "sha256": "befc580bd14b54042e68287f37a5dd59482ab69257df879ebc86397aa9e38b99"
+    },
+    {
+      "path": "recovered/repository-baseline/tinyllm.ipynb",
+      "bytes": 41678,
+      "sha256": "164bda021dc633e04ecd2ec35eb46ae50d429db6ba85b1f46609f5ab3eb3ead3"
+    },
+    {
+      "path": "recovered/repository-baseline/tokeniser/bpe_tokeniser.py",
+      "bytes": 7384,
+      "sha256": "01d57f63cff4b595030096980f4b645f45da8d64dc2f70530be878bb91bf393f"
+    },
+    {
+      "path": "recovered/repository-baseline/tokeniser/test_tokeniser.py",
+      "bytes": 581,
+      "sha256": "5023634ab159e92f90b46688f56146d441faf66e27ff3f2e8afe3ac39d69936b"
+    },
+    {
+      "path": "recovered/repository-baseline/tokeniser/train_tokeniser.py",
+      "bytes": 532,
+      "sha256": "3577b28ebdd67529290f6f0f415bc99d02ce97150010c3b8aef115e1603b2d69"
+    },
+    {
+      "path": "recovered/repository-baseline/train.py",
+      "bytes": 9406,
+      "sha256": "4573ad4468a32b22d44dfdf9550c83fae7059145e8ca80bf9c7f2ee3224f9a90"
+    },
+    {
+      "path": "recovered/repository-baseline/vocab.json",
+      "bytes": 84828,
+      "sha256": "9905e7a62f351c45fcc494680352eeba0e2d234b7a3393421bda1ded775fbca4"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 43,
+      "sha256": "56c761d2091045012068ff80dfd52e418723feda24775381053b35221d2a0cf8"
+    },
+    {
+      "path": "scripts/test_attention_compare.py",
+      "bytes": 2062,
+      "sha256": "befc580bd14b54042e68287f37a5dd59482ab69257df879ebc86397aa9e38b99"
+    },
+    {
+      "path": "tinyllm.ipynb",
+      "bytes": 41678,
+      "sha256": "164bda021dc633e04ecd2ec35eb46ae50d429db6ba85b1f46609f5ab3eb3ead3"
+    },
+    {
+      "path": "tokeniser/bpe_tokeniser.py",
+      "bytes": 7384,
+      "sha256": "01d57f63cff4b595030096980f4b645f45da8d64dc2f70530be878bb91bf393f"
+    },
+    {
+      "path": "tokeniser/test_tokeniser.py",
+      "bytes": 581,
+      "sha256": "5023634ab159e92f90b46688f56146d441faf66e27ff3f2e8afe3ac39d69936b"
+    },
+    {
+      "path": "tokeniser/train_tokeniser.py",
+      "bytes": 532,
+      "sha256": "3577b28ebdd67529290f6f0f415bc99d02ce97150010c3b8aef115e1603b2d69"
+    },
+    {
+      "path": "train.py",
+      "bytes": 9406,
+      "sha256": "4573ad4468a32b22d44dfdf9550c83fae7059145e8ca80bf9c7f2ee3224f9a90"
+    },
+    {
+      "path": "vocab.json",
+      "bytes": 84828,
+      "sha256": "9905e7a62f351c45fcc494680352eeba0e2d234b7a3393421bda1ded775fbca4"
+    }
+  ]
+}
